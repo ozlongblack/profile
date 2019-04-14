@@ -1,0 +1,18 @@
+@mixin mediaSmall() {
+  @media (max-width: $breakpoint-sm + 0px) {
+    @content;
+  }
+}
+
+@mixin mediaMedium() {
+  @media (min-width: $breakpoint-sm + 1px)
+  and (max-width: $breakpoint-md + 0px) {
+    @content;
+  }
+}
+
+@mixin mediaLarge() {
+  @media (min-width: $breakpoint-md + 1px) {
+    @content;
+  }
+}
