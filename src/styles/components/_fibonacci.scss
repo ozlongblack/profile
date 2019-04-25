@@ -1,11 +1,10 @@
 .fibonacci {
   &__path {
     fill: none;
-    stroke: $grayD;
     stroke-opacity: 0.75;
     stroke-width: 12px;
     stroke-linecap: round;
-    mix-blend-mode: overlay;
+    transition: stroke #{$transitionDuration}ms ease-in-out;
   }
 
   &__rect {
@@ -14,7 +13,6 @@
     outline-style: dashed;
     outline-offset: 6px;
     outline-width: 1px;
-    mix-blend-mode: overlay;
     transition: outline-color #{$transitionDuration}ms ease-in-out,
       stroke #{$transitionDuration}ms ease-in-out;
   }

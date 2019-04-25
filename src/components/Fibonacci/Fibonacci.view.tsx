@@ -97,7 +97,13 @@ const Fibonacci = (props: FibonacciProps): JSX.Element => {
     <div className="fibonacci" ref={ref}>
       <svg width={size.width} height={size.height}>
         {rect}
-        <path className="fibonacci__path" d={path} />
+        <path
+          className="fibonacci__path"
+          d={path}
+          style={{
+            stroke: chartStyle.strokeColor,
+          }}
+        />
       </svg>
     </div>
   );

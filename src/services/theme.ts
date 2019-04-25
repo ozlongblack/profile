@@ -20,8 +20,8 @@ export default {
           borderColor: '#eee',
         },
         chart: {
-          strokeColor: '#eee',
-          guideColor: '#ddd',
+          strokeColor: '#ddd',
+          guideColor: '#eee',
         },
       },
       dark: {
@@ -41,8 +41,8 @@ export default {
           borderColor: '#6c7a89',
         },
         chart: {
-          strokeColor: '#eee',
-          guideColor: '#6c7a89',
+          strokeColor: '#6c7a89',
+          guideColor: '#555',
         },
       },
     };
