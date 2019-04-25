@@ -1,5 +1,6 @@
 $fa-font-path: './styles/fonts';
 $ion-font-path: './styles/fonts';
+$font-path: './styles/fonts';
 
 $breakpoint-sm: 600;
 $breakpoint-md: 1024;
@@ -14,16 +15,37 @@ $global-margin-sm: 12px;
 $global-margin-md: 16px;
 $global-margin-lg: 20px;
 
-$global-gutter-sm: 8px;
-$global-gutter-md: 12px;
+$global-gutter-sm: 12px;
 $global-gutter-md: 16px;
+$global-gutter-lg: 20px;
 
-$global-font-title-sm: 16px;
-$global-font-title-md: 20px;
-$global-font-title-lg: 24px;
-$global-font-label-sm: 14px;
-$global-font-label-md: 16px;
-$global-font-label-lg: 18px;
+$global-font-title-sm: 32px;
+$global-font-title-md: 40px;
+$global-font-title-lg: 48px;
+$global-font-label-sm: 16px;
+$global-font-label-md: 20px;
+$global-font-label-lg: 24px;
 $global-font-content-sm: 10px;
 $global-font-content-md: 12px;
 $global-font-content-lg: 14px;
+
+$outline: 1px solid $green;
+$outline-reverse: 1px solid $white;
+
+$mobile-grid: (
+  columns: 12,
+  gutter: $global-gutter-sm,
+  media: $breakpoint-md,
+);
+
+$tablet-grid: (
+  columns: 12,
+  gutter: $global-gutter-md,
+  media: $breakpoint-md,
+);
+
+$desktop-grid: (
+  columns: 12,
+  gutter: $global-gutter-lg,
+  media: $breakpoint-md,
+);

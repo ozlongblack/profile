@@ -20,6 +20,14 @@ const SideNavigation: FunctionComponent<SideNavigationProps> = (
           <i className="icon ion-md-close" />
         </button>
       </div>
+      <div className="sideNavigation__body">
+        <a className="sideNavigation__item" href="#intro">
+          Intro
+        </a>
+        <a className="sideNavigation__item" href="#stack">
+          Stack
+        </a>
+      </div>
     </section>
   );
 };

@@ -1,5 +1,7 @@
 .generalPageLayout {
   position: relative;
   overflow-x: hidden;
+  transition: background-color #{$transitionDuration}ms ease-in-out,
+    color #{$transitionDuration}ms ease-in-out;
   z-index: 1;
 }

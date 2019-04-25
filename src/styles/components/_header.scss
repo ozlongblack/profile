@@ -1,8 +1,13 @@
 .header {
   display: flex;
+  position: fixed;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+  transition: background-color #{$animationDuration}ms ease-in-out,
+    height #{$animationDuration}ms ease-in-out;
+  z-index: 7;
 
   @include mediaSmall() {
     padding: {
@@ -30,31 +35,53 @@
   }
 
   &--fixed {
-    position: fixed;
-    width: 100%;
     height: #{$navigation-height-sm}px;
     top: 0;
+    background-color: rgba(0, 0, 0, 0.25);
 
     + .generalPageLayout__content {
       padding-top: #{$navigation-height-md}px;
     }
 
     .header__logo {
-      height: 40px;
+      height: 36px;
     }
   }
 
   &__logo {
-    height: 60px;
-    transition: all #{$animationDuration}ms ease-in-out;
+    height: 48px;
+    transition: height #{$animationDuration}ms ease-in-out;
+
+    &:focus {
+      outline: $outline;
+    }
 
     &__img {
       height: 100%;
     }
   }
-  
+
+  &__menu {
+    display: flex;
+    align-items: center;
+
+    .switch {
+      margin: {
+        left: $global-margin-lg;
+        right: $global-margin-lg;
+      }
+    }
+  }
+
   &__btn {
-    $ButtonConfig: (hoverColor: $green);
+    $ButtonConfig: (
+      hoverColor: $green,
+    );
+
     @include button-icon($ButtonConfig);
+
+    &:focus {
+      outline: $outline;
+    }
   }
 }

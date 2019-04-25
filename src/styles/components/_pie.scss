@@ -1,0 +1,11 @@
+.pie {
+  text.label {
+    font-family: AvenirNext-DemiBold;
+    font-size: 9px;
+    fill: $white;
+    text-anchor: middle;
+    alignment-baseline: middle;
+    mix-blend-mode: difference;
+    opacity: 0.5;
+  }
+}

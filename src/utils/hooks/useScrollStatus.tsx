@@ -1,13 +1,11 @@
 import { useEffect, useState } from 'react';
 import { Scroll } from 'types/Scroll';
-import { BREAKPOINTS } from 'consts';
+import { NAVIGATIONS } from 'consts';
 
 const isSticky: Function = (
   scroll: number,
-  target: number = BREAKPOINTS.md - BREAKPOINTS.sm,
-): boolean => {
-  return scroll > target;
-};
+  target: number = NAVIGATIONS.md - NAVIGATIONS.sm,
+): boolean => scroll > target;
 
 const calcPosition: Function = (
   scroll: number,

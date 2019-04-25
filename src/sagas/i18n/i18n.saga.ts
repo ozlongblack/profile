@@ -5,10 +5,10 @@ import { put, select, takeLatest } from 'redux-saga/effects';
 import { Action } from 'types/Action';
 
 export function* setI18n(): Generator {
-  const i18n: string = yield select(
+  const i18nState: string = yield select(
     (state: { i18n: string }): string => state.i18n,
   );
-  const action: Action = yield Maybe.fromNull(i18n ? i18n : null)
+  const action: Action = yield Maybe.fromNull(i18nState || null)
     .orElse(Maybe.Some(head(split('-')(navigator.language)) || 'en'))
     .flatMap((language: string): Maybe<Function> => i18nActions.set(language));
 

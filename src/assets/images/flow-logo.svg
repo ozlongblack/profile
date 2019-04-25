@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="243px" height="253px" viewBox="0 0 243 253" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>flow-logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="flow-logo" fill-rule="nonzero">
+            <g id="Group">
+                <polygon id="Path" fill="#FFCA20" opacity="0.7" points="224.74 109 140.63 24.9 224.74 24.9"></polygon>
+                <polygon id="Path" fill="#FFCA20" opacity="0.7" points="81.72 0 129.4 0 165.84 36.43 81.72 36.43"></polygon>
+                <path d="M84.45,84.12 L0.34,0 L101.47,0 L101.47,84.11 L84.45,84.12 Z M158.34,168.22 L242.45,252.33 L158.34,252.33 L158.34,168.22 Z" id="Shape" fill="#FFCF39" opacity="0.9"></path>
+                <path d="M101.47,168.23 L17.37,84.11 L101.48,84.11 L101.48,168.22 L101.47,168.23 Z M192.05,125.66 L125,58.57 L192.08,58.57 L192.05,125.66 Z M199.89,244.5 L123.61,168.23 L199.89,168.23 L199.89,244.5 Z" id="Shape" fill="#FFE490" opacity="0.7"></path>
+                <polygon id="Path" fill="#FCBC7C" opacity="0.9" points="101.47 67 34.47 0 101.47 0"></polygon>
+                <polygon id="Path" fill="#F9A040" opacity="0.8" points="123.95 168.22 208.06 252.33 123.95 252.33"></polygon>
+                <polygon id="Path" fill="#F9A040" opacity="0.7" points="209.08 201.8 125.08 117.8 209.08 117.8"></polygon>
+                <polygon id="Path" fill="#FFCF39" opacity="0.9" points="125 58.57 208.09 141.66 125 141.66"></polygon>
+                <polygon id="Path" fill="#FFC737" opacity="0.7" points="101.47 252 0 150.51 101.47 150.51"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

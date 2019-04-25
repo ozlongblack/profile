@@ -1,0 +1,103 @@
+.stack {
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+  z-index: 1;
+
+  &__summary {
+    margin: 0 auto;
+    max-width: 1200px;
+
+    @include grid-container;
+
+    &__placeholder {
+      display: flex;
+      justify-content: center;
+      box-sizing: border-box;
+
+      @include mediaSmall() {
+        padding: $global-gutter-lg;
+        height: 160px;
+      }
+      @include mediaMedium() {
+        padding: $global-gutter-lg;
+        height: 160px;
+      }
+      @include mediaLarge() {
+        padding: 40px;
+        height: 200px;
+      }
+    }
+
+    &__item {
+      position: relative;
+
+      @include mediaSmall() {
+        @include grid-column(12, $mobile-grid);
+      }
+      @include mediaMedium() {
+        @include grid-column(4, $tablet-grid);
+      }
+      @include mediaLarge() {
+        @include grid-column(4, $desktop-grid);
+      }
+
+      &__logo {
+        position: absolute;
+        mix-blend-mode: multiply;
+
+        svg {
+          width: 120px;
+          height: 120px;
+        }
+      }
+
+      &__circle {
+        position: absolute;
+        width: 78px;
+        height: 78px;
+        border-radius: 50%;
+        mix-blend-mode: multiply;
+
+        &--2 {
+          transform: translate3d(-26px, 50px, 0);
+        }
+        &--3 {
+          transform: translate3d(26px, 50px, 0);
+        }
+      }
+
+      &__desc {
+        @include mediaSmall() {
+          padding: {
+            left: $global-gutter-sm;
+            right: $global-gutter-sm;
+          }
+        }
+        @include mediaMedium() {
+          padding: {
+            left: $global-gutter-md;
+            right: $global-gutter-md;
+          }
+        }
+        @include mediaLarge() {
+          padding: {
+            left: $global-gutter-lg;
+            right: $global-gutter-lg;
+          }
+        }
+
+        h3 {
+          font-family: AvenirNext-DemiBold;
+          transition: color #{$transitionDuration}ms ease-in-out;
+        }
+
+        p {
+          font-family: AvenirNext-Medium;
+          line-height: 1.6;
+          transition: color #{$transitionDuration}ms ease-in-out;
+        }
+      }
+    }
+  }
+}

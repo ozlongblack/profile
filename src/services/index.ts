@@ -1,1 +1,2 @@
-export { default as listService } from './list';
+export { default as profileService } from './profile';
+export { default as themeService } from './theme';

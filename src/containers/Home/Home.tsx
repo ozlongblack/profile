@@ -1,10 +1,11 @@
 import React, { FunctionComponent } from 'react';
-import { GeneralPageLayout, List } from 'components';
+import { GeneralPageLayout, Intro, Stack } from 'components';
 
 const Home: FunctionComponent = (): JSX.Element => {
   return (
     <GeneralPageLayout>
-      <List />
+      <Intro />
+      <Stack />
     </GeneralPageLayout>
   );
 };

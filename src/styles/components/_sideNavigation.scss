@@ -6,34 +6,19 @@
   background-color: $green;
   box-sizing: border-box;
   transition: width #{$transitionDuration}ms ease-in-out,
-              transform #{$transitionDuration}ms ease-in-out;
+    transform #{$transitionDuration}ms ease-in-out;
   z-index: 9;
 
   @include mediaSmall() {
     width: 100%;
-    padding: {
-      left: $global-margin-sm;
-      right: $global-margin-sm;
-    }
   }
 
   @include mediaMedium() {
     width: 100%;
-    padding: {
-      left: $global-margin-md;
-      right: $global-margin-md;
-    }
   }
 
   @include mediaLarge() {
     width: 240px;
-    padding: {
-      left: $global-margin-lg;
-      right: $global-margin-lg;
-    }
-  }
-
-  &--open {
   }
 
   &--closed {
@@ -41,8 +26,15 @@
   }
 
   &__close {
-    $ButtonConfig: (hoverColor: $white);
+    $ButtonConfig: (
+      hoverColor: $white,
+    );
+
     @include button-icon($ButtonConfig);
+
+    &:focus {
+      outline: $outline-reverse;
+    }
   }
 
   &__header {
@@ -50,5 +42,44 @@
     height: #{$navigation-height-md}px;
     align-items: center;
     justify-content: flex-end;
+
+    @include mediaSmall() {
+      padding : {
+        left: $global-gutter-sm;
+        right: $global-gutter-sm;
+      }
+    }
+
+    @include mediaMedium() {
+      padding : {
+        left: $global-gutter-md;
+        right: $global-gutter-md;
+      }
+    }
+
+    @include mediaLarge() {
+      padding : {
+        left: $global-gutter-lg;
+        right: $global-gutter-lg;
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    padding: $global-gutter-lg;
+    color: $white;
+    font-family: AvenirNext-DemiBold;
+    font-size: $global-font-label-md;
+    text-decoration: none;
+    transition: background-color #{$animationDuration}ms ease-in-out;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.25);
+    }
   }
 }

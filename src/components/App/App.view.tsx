@@ -1,8 +1,8 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, Suspense } from 'react';
 import { addLocaleData, IntlProvider } from 'react-intl';
 import en from 'react-intl/locale-data/en';
 import ko from 'react-intl/locale-data/ko';
-import { Router } from 'components';
+import { Loading, Router } from 'components';
 import Components from 'routes';
 import messagesEn from 'translations/en.json';
 import messagesKo from 'translations/ko.json';
@@ -18,7 +18,9 @@ const messages: Intl = {
 
 const App: FunctionComponent<AppProps> = (props: AppProps): JSX.Element => (
   <IntlProvider locale={props.i18n} messages={messages[props.i18n]}>
-    <Router components={Components} />
+    <Suspense fallback={<Loading isLoading={true} />}>
+      <Router components={Components} />
+    </Suspense>
   </IntlProvider>
 );
 

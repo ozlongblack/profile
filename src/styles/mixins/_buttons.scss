@@ -9,7 +9,8 @@
   color: $charcoal;
   font-size: 24px;
   line-height: 24px;
-  transition: color #{$animationDuration}ms ease-in-out, border-color #{$animationDuration}ms ease-in-out;
+  transition: color #{$transitionDuration}ms ease-in-out,
+    border-color #{$transitionDuration}ms ease-in-out;
   cursor: pointer;
 
   &:focus {

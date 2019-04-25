@@ -1,0 +1,110 @@
+.tool {
+  margin: 0 auto;
+  max-width: 1200px;
+
+  @include grid-container;
+
+  &__header {
+    margin-top: 40px;
+    color: $black;
+    font-family: AvenirNext-DemiBold;
+
+    @include mediaSmall() {
+      @include grid-column(12, $mobile-grid);
+    }
+    @include mediaMedium() {
+      @include grid-column(12, $tablet-grid);
+    }
+    @include mediaLarge() {
+      @include grid-column(12, $desktop-grid);
+    }
+  }
+
+  &__item {
+    display: flex;
+    margin-bottom: $global-gutter-lg;
+    border-color: #eee;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    outline-color: transparent;
+    text-decoration: none;
+    transition: border-color #{$transitionDuration}ms ease-in-out,
+      outline #{$animationDuration}ms ease-in-out;
+
+    @include mediaSmall() {
+      @include grid-column(6, $mobile-grid);
+    }
+    @include mediaMedium() {
+      @include grid-column(4, $tablet-grid);
+    }
+    @include mediaLarge() {
+      @include grid-column(3, $desktop-grid);
+    }
+
+    &:hover {
+      outline: $outline;
+      outline-offset: -1px;
+    }
+
+    &:focus {
+      outline: $outline;
+      outline-offset: -1px;
+    }
+
+    &__logo {
+      @include mediaSmall() {
+        padding: $global-gutter-sm;
+      }
+      @include mediaMedium() {
+        padding: $global-gutter-md;
+      }
+      @include mediaLarge() {
+        padding: $global-gutter-lg;
+      }
+
+      &__svg {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    &__desc {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    &__label {
+      font-family: AvenirNext-DemiBold;
+      transition: color #{$transitionDuration}ms ease-in-out;
+
+      @include mediaSmall() {
+        font-size: $global-font-content-sm;
+      }
+      @include mediaMedium() {
+        font-size: $global-font-content-md;
+      }
+      @include mediaLarge() {
+        font-size: $global-font-content-lg;
+      }
+    }
+
+    &__type {
+      margin-top: 4px;
+      font-family: AvenirNext-Medium;
+      line-height: 1.1;
+      transition: color #{$transitionDuration}ms ease-in-out;
+
+      @include mediaSmall() {
+        font-size: $global-font-content-sm;
+      }
+      @include mediaMedium() {
+        font-size: $global-font-content-md;
+      }
+      @include mediaLarge() {
+        font-size: $global-font-content-md;
+      }
+    }
+  }
+}

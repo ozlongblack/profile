@@ -1,0 +1,48 @@
+.keywords {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+
+  @include mediaSmall() {
+    margin-bottom: $global-font-label-sm;
+    height: $global-font-title-sm;
+  }
+
+  @include mediaMedium() {
+    margin-bottom: $global-font-label-md;
+    height: $global-font-title-md;
+  }
+
+  @include mediaLarge() {
+    margin-bottom: $global-font-label-lg;
+    height: $global-font-title-lg;
+  }
+
+  &__item {
+    position: absolute;
+    font-family: AvenirNext-DemiBold;
+    mix-blend-mode: multiply;
+    user-select: none;
+
+    @include mediaSmall() {
+      font-size: $global-font-title-sm;
+    }
+
+    @include mediaMedium() {
+      font-size: $global-font-title-md;
+    }
+
+    @include mediaLarge() {
+      font-size: $global-font-title-lg;
+    }
+  }
+
+  &__loading {
+    position: absolute;
+    bottom: 0;
+    height: 8px;
+    background-color: yellow;
+    mix-blend-mode: multiply;
+    transform: translateY(-100%);
+  }
+}

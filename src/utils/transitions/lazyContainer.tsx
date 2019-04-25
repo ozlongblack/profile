@@ -1,25 +1,8 @@
-import React, { FunctionComponent } from 'react';
-import Loadable, { LoadableComponent } from 'react-loadable';
-import { Loading } from 'components';
+import { lazy, FunctionComponent, LazyExoticComponent } from 'react';
 
-const render = (
-  loaded: { default: FunctionComponent },
-  props?: {},
-): JSX.Element => {
-  const BaseComponent: FunctionComponent = loaded.default;
-  return (
-    <>
-      <Loading isLoading={false} />
-      <BaseComponent {...props} />
-    </>
-  );
-};
-
-const lazyContainer: Function = (page: string): LoadableComponent =>
-  Loadable({
-    loader: () => import(`../../containers/${page}`),
-    loading: Loading,
-    render,
-  });
+const lazyContainer: Function = (
+  page: string,
+): LazyExoticComponent<FunctionComponent> =>
+  lazy((): Promise<any> => import(`../../containers/${page}`));
 
 export default lazyContainer;

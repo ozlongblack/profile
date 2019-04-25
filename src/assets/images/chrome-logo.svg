@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="39px" viewBox="0 0 38 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>chrome-logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="chrome-logo" fill-rule="nonzero">
+            <circle id="Oval" fill="#4CAF50" cx="19" cy="20" r="19"></circle>
+            <path d="M19,1 L19,20 L27,24 L18.2,39 L19,39 C29.4934102,39 38,30.4934102 38,20 C38,9.50658975 29.4934102,1 19,1 Z" id="Path" fill="#FFC107"></path>
+            <path d="M11,24 L19,11 L35.7,11 C32.5385229,5.03907595 26.4389915,1.2156908 19.6961194,0.968245951 C12.9532473,0.720801104 6.58988409,4.08683232 3,9.8 L11,24 Z" id="Path" fill="#F44336"></path>
+            <polygon id="Path" fill="#DD2C00" points="3 9.8 11 24 16 23"></polygon>
+            <polygon id="Path" fill="#F9A825" points="35.6 11 19 11 17.5 15.8"></polygon>
+            <polygon id="Path" fill="#558B2F" points="18.2 39 27 24 23.2 20.9"></polygon>
+            <circle id="Oval" fill="#FFFFFF" cx="19" cy="20" r="9"></circle>
+            <circle id="Oval" fill="#2196F3" cx="19" cy="20" r="7"></circle>
+        </g>
+    </g>
+</svg>

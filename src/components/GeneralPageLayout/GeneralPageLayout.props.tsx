@@ -1,3 +1,6 @@
+import { ThemeState } from 'types/Theme';
+
 export interface GeneralPageLayoutProps {
-  children: any;
+  children?: any;
+  theme: ThemeState;
 }
