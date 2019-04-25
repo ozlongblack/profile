@@ -78,6 +78,10 @@
     text-decoration: none;
     transition: background-color #{$animationDuration}ms ease-in-out;
 
+    &:focus {
+      outline: $outline-reverse;
+    }
+
     &:hover {
       background-color: rgba(0, 0, 0, 0.25);
     }

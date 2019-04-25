@@ -16,15 +16,24 @@ const SideNavigation: FunctionComponent<SideNavigationProps> = (
           onClick={(): void => {
             props.close();
           }}
+          tabIndex={props.show ? 0 : -1}
         >
           <i className="icon ion-md-close" />
         </button>
       </div>
       <div className="sideNavigation__body">
-        <a className="sideNavigation__item" href="#intro">
+        <a
+          className="sideNavigation__item"
+          href="#intro"
+          tabIndex={props.show ? 0 : -1}
+        >
           Intro
         </a>
-        <a className="sideNavigation__item" href="#stack">
+        <a
+          className="sideNavigation__item"
+          href="#stack"
+          tabIndex={props.show ? 0 : -1}
+        >
           Stack
         </a>
       </div>
