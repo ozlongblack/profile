@@ -29,8 +29,7 @@
     box-sizing: border-box;
     outline-color: transparent;
     text-decoration: none;
-    transition: border-color #{$transitionDuration}ms ease-in-out,
-      outline #{$animationDuration}ms ease-in-out;
+    transition: border-color #{$transitionDuration}ms ease-in-out;
 
     @include mediaSmall() {
       @include grid-column(6, $mobile-grid);
