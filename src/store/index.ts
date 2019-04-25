@@ -36,7 +36,7 @@ const persistConfig: PersistConfig = {
   transforms: [immutableTransform()],
   key: 'root',
   storage,
-  whitelist: ['darkMode', 'i18n'],
+  whitelist: ['darkMode', 'i18n', 'theme'],
 };
 
 const router: Record<string, any> = connectRoutes(routesMap, routerConfig);

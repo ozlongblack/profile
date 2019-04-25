@@ -15,6 +15,8 @@ import { Profile } from 'types/Profile';
 import { toMap } from './theme.transformers';
 
 function* setTheme(): Generator {
+  yield put(themeActions.requested());
+
   const darkMode: boolean = yield select(
     (state: { darkMode: boolean }): boolean => state.darkMode,
   );
