@@ -48,7 +48,7 @@ export default {
     };
 
     return new Promise(
-      (resolve: Function): number =>
+      (resolve: Function): NodeJS.Timeout =>
         setTimeout((): void => {
           resolve(Either.Right(themes[id]));
         }, 0),

@@ -3,7 +3,7 @@ import { Either } from 'monet';
 export default {
   get(): Promise<Either<Error, {}>> {
     return new Promise(
-      (resolve: Function): number =>
+      (resolve: Function): NodeJS.Timeout =>
         setTimeout((): void => {
           resolve(
             Either.Right({

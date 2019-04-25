@@ -27,7 +27,7 @@ const Keyword = (props: KeywordProps): JSX.Element => {
 
   useEffect((): (() => void) => {
     const keywords = props.keywords;
-    let keywordTransition: number;
+    let keywordTransition: NodeJS.Timeout;
 
     if (keywords) {
       setKeyword(keywords[counter.current].toUpperCase());
