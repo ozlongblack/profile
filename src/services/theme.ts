@@ -48,7 +48,7 @@ export default {
     };
 
     return new Promise(
-      (resolve: Function): NodeJS.Timeout =>
+      (resolve: Function): any =>
         setTimeout((): void => {
           resolve(Either.Right(themes[id]));
         }, 0),
