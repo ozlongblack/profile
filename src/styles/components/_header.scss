@@ -66,9 +66,25 @@
     align-items: center;
 
     .switch {
-      margin: {
-        left: $global-margin-lg;
-        right: $global-margin-lg;
+      @include mediaSmall() {
+        margin: {
+          left: $global-gutter-sm;
+          right: $global-gutter-sm;
+        }
+      }
+
+      @include mediaMedium() {
+        margin: {
+          left: $global-gutter-md;
+          right: $global-gutter-md;
+        }
+      }
+
+      @include mediaLarge() {
+        margin: {
+          left: $global-gutter-lg;
+          right: $global-gutter-lg;
+        }
       }
     }
   }

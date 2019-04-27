@@ -1,4 +1,5 @@
 export { default as App } from './App';
+export { default as Experience } from './Experience';
 export { default as GeneralPageLayout } from './GeneralPageLayout';
 export { default as Fibonacci } from './Fibonacci';
 export { default as Footer } from './Footer';
@@ -12,4 +13,5 @@ export { default as ScrollTracker } from './ScrollTracker';
 export { default as SideNavigation } from './SideNavigation';
 export { default as Stack } from './Stack';
 export { default as Summary } from './Summary';
+export { default as TimeLine } from './TimeLine';
 export { default as Tool } from './Tool';

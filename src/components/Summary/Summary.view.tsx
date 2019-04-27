@@ -55,12 +55,18 @@ const Summary = (props: SummaryProps): JSX.Element => {
 
   return (
     <div
+      id="about"
       className="stack__summary"
       onMouseMove={({ clientX: x, clientY: y }): void => {
         set({ xy: calc(x, y) });
       }}
     >
-      <h3 className="tool__header">About Me</h3>
+      <h3
+        className="tool__header"
+        style={{ color: generalStyle.fontLabelColor }}
+      >
+        About Me
+      </h3>
       <div className="stack__summary__item">
         <div
           className="stack__summary__placeholder"

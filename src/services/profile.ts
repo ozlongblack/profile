@@ -162,9 +162,53 @@ export default {
                   link: 'https://www.adobe.com',
                 },
               ],
+              experience: [
+                {
+                  id: 'stationfive',
+                  startDate: '20171001',
+                  company: 'StationFive',
+                  location: 'Sydney, Australia',
+                  role: 'Front-end Developer',
+                  summary: [
+                    'Developed and provided web applications using React/Redux and Angular 6/RXJS to multiple clients.',
+                    'Leading front-end development to build a Business Intelligence application.',
+                    'Successfully productized a web application for Woolworths.',
+                    'Leading data visualization implementation using d3.js.',
+                    'Following Functional Programming and Test-Driven Development pattern.',
+                  ],
+                },
+                {
+                  id: 'skplanet',
+                  startDate: '20150823',
+                  endDate: '20170630',
+                  company: 'SK Planet',
+                  location: 'Pangyo, Korea',
+                  role: 'Front-end Developer',
+                  summary: [
+                    'Developed and managed multiple web applications to provide internal/external Open APIs to over 2,000 internal employees and over 5,000 customers.',
+                    'Contributed to customer satisfaction with technical support.',
+                    'Led front-end development using React and Angularjs in Platform architecture team.',
+                    'Designed User Interface and implemented Responsive Web Design.',
+                  ],
+                },
+                {
+                  id: 'ibm',
+                  startDate: '20110101',
+                  endDate: '20150823',
+                  company: 'IBM Korea',
+                  location: 'Seoul, Korea',
+                  role: 'Software Engineer',
+                  summary: [
+                    'Successfully developed and provided web-based integrated systems using Javascript and IBM solutions across multiple major companies in Korea (LG Electronics, Korean Air Lines, Kyobo Life Insurance).',
+                    'Analyzed a variety of data and utilized Natural Language Processing to find valuable insights using IBM Watson Explorer.',
+                    'My team made a best practice providing an integrated NLP solution to Korean Air Lines. (https://www.ibm.com/case-studies/koreanairlines)',
+                    'Implemented multiple web-based dashboard applications using Javascript, dojo, jQuery and IBM Cognos BI solution.',
+                  ],
+                },
+              ],
             }),
           );
-        }, 1000),
+        }, 0),
     );
   },
 };

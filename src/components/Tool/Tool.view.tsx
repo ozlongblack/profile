@@ -51,8 +51,13 @@ const Tool = (props: ToolProps): JSX.Element => {
   const generalStyle = theme.get('general');
 
   return (
-    <div className="tool">
-      <h3 className="tool__header">Tech stack</h3>
+    <div id="tool" className="tool">
+      <h3
+        className="tool__header"
+        style={{ color: generalStyle.fontLabelColor }}
+      >
+        Tech stack
+      </h3>
       {renderStack(stack, generalStyle)}
     </div>
   );

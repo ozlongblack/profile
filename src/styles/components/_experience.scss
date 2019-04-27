@@ -1,0 +1,22 @@
+.experience {
+  margin: 0 auto;
+  max-width: 1200px;
+  @include grid-container;
+
+  &__header {
+    margin-top: 80px;
+    color: $black;
+    font-family: AvenirNext-DemiBold;
+    transition: color #{$transitionDuration}ms ease-in-out;
+
+    @include mediaSmall() {
+      @include grid-column(12, $mobile-grid);
+    }
+    @include mediaMedium() {
+      @include grid-column(12, $tablet-grid);
+    }
+    @include mediaLarge() {
+      @include grid-column(12, $desktop-grid);
+    }
+  }
+}

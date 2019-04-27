@@ -31,10 +31,24 @@ const SideNavigation: FunctionComponent<SideNavigationProps> = (
         </a>
         <a
           className="sideNavigation__item"
-          href="#stack"
+          href="#about"
           tabIndex={props.show ? 0 : -1}
         >
-          Stack
+          About Me
+        </a>
+        <a
+          className="sideNavigation__item"
+          href="#tool"
+          tabIndex={props.show ? 0 : -1}
+        >
+          Tech Stack
+        </a>
+        <a
+          className="sideNavigation__item"
+          href="#experience"
+          tabIndex={props.show ? 0 : -1}
+        >
+          Experience
         </a>
       </div>
     </section>

@@ -3,7 +3,7 @@ import { Summary, Tool } from 'components';
 
 const Stack = (): JSX.Element => {
   return (
-    <div id="stack" className="stack">
+    <div className="stack">
       <Summary />
       <Tool />
     </div>
