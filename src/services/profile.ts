@@ -169,8 +169,8 @@ export default {
                 location: 'Sydney, Australia',
                 role: 'Senior Front-end Developer',
                 summary: [
-                  'Develop and manage Appliances Online (https://www.appliancesonline.com.au/).',
-                  'Leading front-end development using the latest version of Angular/NGRX',
+                  'Develop and manage Appliances Online. (https://www.appliancesonline.com.au/)',
+                  'Leading front-end development using the latest version of Angular/NGRX.',
                   'Working closely with Back-end developers and design team.',
                 ],
               },
