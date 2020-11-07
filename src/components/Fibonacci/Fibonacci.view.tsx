@@ -15,7 +15,7 @@ const Fibonacci = (props: FibonacciProps): JSX.Element => {
   const [rect, setRect] = useState([]);
   const [size, setSize] = useState({ width: 0, height: 0 });
 
-  const resize = (node, update): void => {
+  const resize = (node: any, update: any): void => {
     const width = node.offsetWidth;
     const height = node.offsetHeight;
     update({ width, height });

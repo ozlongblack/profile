@@ -4,7 +4,7 @@ import * as d3 from 'd3';
 import { ANIMATIONS } from 'consts';
 import { PieProps } from './Pie.props';
 
-const generateData = (value, length = 4): Record<string, number>[] =>
+const generateData = (value: any, length = 4): any =>
   d3.range(length).map(
     (item: number, index: number): Record<string, number> => ({
       date: index,
@@ -62,7 +62,7 @@ const Pie = (props: PieProps): JSX.Element => {
   const cache = useRef<any | null>([]);
   const createPie = d3
     .pie()
-    .value((d: Record<string, number>): number => d.value)
+    .value((d: any): number => d.value)
     .sort(null);
   const createArc = d3
     .arc()

@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react';
 import { connect, MapStateToProps } from 'react-redux';
 import { FibonacciProps } from './Fibonacci.props';
 
-const mapStateToProps: MapStateToProps<{}, {}, FibonacciProps> = (
+const mapStateToProps: MapStateToProps<any, any, FibonacciProps> = (
   state: FibonacciProps,
 ): {} => ({
   theme: state.theme,
@@ -10,6 +10,6 @@ const mapStateToProps: MapStateToProps<{}, {}, FibonacciProps> = (
 
 export default function generator(
   BaseComponent: FunctionComponent<FibonacciProps>,
-): Function {
+) {
   return connect(mapStateToProps)(BaseComponent);
 }

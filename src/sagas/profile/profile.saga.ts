@@ -16,7 +16,7 @@ import { toMap } from './profile.transformers';
 function* setProfile(): Generator {
   yield put(profileActions.requested());
 
-  const result: Either<Error, Profile> = yield call(profileService.get);
+  const result: any = yield call(profileService.get);
   yield result
     .flatMap(
       (data: Profile): Either<Error, Map<string, any>> => Right(toMap(data)),
@@ -26,8 +26,10 @@ function* setProfile(): Generator {
       (data: Map<string, any>): Action => profileActions.completed(data),
     )
     .cata(
-      (error): SimpleEffect<'PUT', PutEffectDescriptor<Action>> => put(error),
-      (action): SimpleEffect<'PUT', PutEffectDescriptor<Action>> => put(action),
+      (error: any): SimpleEffect<'PUT', PutEffectDescriptor<Action>> =>
+        put(error),
+      (action: any): SimpleEffect<'PUT', PutEffectDescriptor<Action>> =>
+        put(action),
     );
 }
 

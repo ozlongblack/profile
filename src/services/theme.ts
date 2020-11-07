@@ -2,7 +2,7 @@ import { Either } from 'monet';
 
 export default {
   get(id: string): Promise<Either<Error, {}>> {
-    const themes = {
+    const themes: any = {
       default: {
         header: {
           fontColor: '#6c7a89',
@@ -47,11 +47,10 @@ export default {
       },
     };
 
-    return new Promise(
-      (resolve: Function): any =>
-        setTimeout((): void => {
-          resolve(Either.Right(themes[id]));
-        }, 0),
+    return new Promise((resolve: Function): any =>
+      setTimeout((): void => {
+        resolve(Either.Right(themes[id]));
+      }, 0),
     );
   },
 };

@@ -17,12 +17,12 @@ import { toMap } from './theme.transformers';
 function* setTheme(): Generator {
   yield put(themeActions.requested());
 
-  const darkMode: boolean = yield select(
+  const darkMode: any = yield select(
     (state: { darkMode: boolean }): boolean => state.darkMode,
   );
   const theme = darkMode ? 'dark' : 'default';
 
-  const result: Either<Error, Profile> = yield call(themeService.get, theme);
+  const result: any = yield call(themeService.get, theme);
   yield result
     .flatMap(
       (data: Profile): Either<Error, Map<string, any>> => Right(toMap(data)),
@@ -32,8 +32,10 @@ function* setTheme(): Generator {
       (data: Map<string, any>): Action => themeActions.completed(data),
     )
     .cata(
-      (error): SimpleEffect<'PUT', PutEffectDescriptor<Action>> => put(error),
-      (action): SimpleEffect<'PUT', PutEffectDescriptor<Action>> => put(action),
+      (error: any): SimpleEffect<'PUT', PutEffectDescriptor<Action>> =>
+        put(error),
+      (action: any): SimpleEffect<'PUT', PutEffectDescriptor<Action>> =>
+        put(action),
     );
 }
 

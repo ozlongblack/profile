@@ -1,17 +1,17 @@
 @font-face {
   font-family: AvenirNext-DemiBold;
-  src: url(#{$font-path}/AvenirNext-DemiBold.eot);
-  src: url(#{$font-path}/AvenirNext-DemiBold.eot) format('embedded-opentype'),
-    url(#{$font-path}/AvenirNext-DemiBold.woff2) format('woff2'),
-    url(#{$font-path}/AvenirNext-DemiBold.woff) format('woff'),
-    url(#{$font-path}/AvenirNext-DemiBold.ttf) format('truetype');
+  src: url(../fonts/AvenirNext-DemiBold.eot);
+  src: url(../fonts/AvenirNext-DemiBold.eot) format('embedded-opentype'),
+    url(../fonts/AvenirNext-DemiBold.woff2) format('woff2'),
+    url(../fonts/AvenirNext-DemiBold.woff) format('woff'),
+    url(../fonts/AvenirNext-DemiBold.ttf) format('truetype');
 }
 
 @font-face {
   font-family: AvenirNext-Medium;
-  src: url(#{$font-path}/AvenirNext-Medium.eot);
-  src: url(#{$font-path}/AvenirNext-Medium.eot) format('embedded-opentype'),
-    url(#{$font-path}/AvenirNext-Medium.woff2) format('woff2'),
-    url(#{$font-path}/AvenirNext-Medium.woff) format('woff'),
-    url(#{$font-path}/AvenirNext-Medium.ttf) format('truetype');
+  src: url(../fonts/AvenirNext-Medium.eot);
+  src: url(../fonts/AvenirNext-Medium.eot) format('embedded-opentype'),
+    url(../fonts/AvenirNext-Medium.woff2) format('woff2'),
+    url(../fonts/AvenirNext-Medium.woff) format('woff'),
+    url(../fonts/AvenirNext-Medium.ttf) format('truetype');
 }

@@ -6,11 +6,13 @@ import { TimelineProps } from './TimeLine.props';
 import ibm from 'assets/images/ibm.png';
 import skplanet from 'assets/images/skplanet.png';
 import stationfive from 'assets/images/stationfive.png';
+import winning from 'assets/images/winning.png';
 
-const IMAGES = {
+const IMAGES: any = {
   ibm,
   skplanet,
   stationfive,
+  winning,
 };
 
 const renderSummary = (

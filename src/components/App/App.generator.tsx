@@ -10,6 +10,6 @@ const mapStateToProps: MapStateToProps<{}, {}, AppProps> = (
 
 export default function generator(
   BaseComponent: FunctionComponent<AppProps>,
-): Function {
+) {
   return connect(mapStateToProps)(BaseComponent);
 }

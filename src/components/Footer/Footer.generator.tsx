@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react';
 import { connect, MapStateToProps } from 'react-redux';
 import { FooterProps } from './Footer.props';
 
-const mapStateToProps: MapStateToProps<{}, {}, FooterProps> = (
+const mapStateToProps: MapStateToProps<any, any, FooterProps> = (
   state: FooterProps,
 ): {} => ({
   theme: state.theme,
@@ -10,6 +10,6 @@ const mapStateToProps: MapStateToProps<{}, {}, FooterProps> = (
 
 export default function generator(
   BaseComponent: FunctionComponent<FooterProps>,
-): Function {
+) {
   return connect(mapStateToProps)(BaseComponent);
 }

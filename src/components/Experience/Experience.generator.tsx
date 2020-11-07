@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react';
 import { connect, MapStateToProps } from 'react-redux';
 import { ExperienceProps } from './Experience.props';
 
-const mapStateToProps: MapStateToProps<{}, {}, ExperienceProps> = (
+const mapStateToProps: MapStateToProps<any, any, ExperienceProps> = (
   state: ExperienceProps,
 ): {} => ({
   profile: state.profile,
@@ -11,6 +11,6 @@ const mapStateToProps: MapStateToProps<{}, {}, ExperienceProps> = (
 
 export default function generator(
   BaseComponent: FunctionComponent<ExperienceProps>,
-): Function {
+) {
   return connect(mapStateToProps)(BaseComponent);
 }

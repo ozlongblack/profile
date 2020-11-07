@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react';
 import { connect, MapStateToProps } from 'react-redux';
 import { IntroProps } from './Intro.props';
 
-const mapStateToProps: MapStateToProps<{}, {}, IntroProps> = (
+const mapStateToProps: MapStateToProps<any, any, IntroProps> = (
   state: IntroProps,
 ): {} => ({
   profile: state.profile,
@@ -11,6 +11,6 @@ const mapStateToProps: MapStateToProps<{}, {}, IntroProps> = (
 
 export default function generator(
   BaseElement: FunctionComponent<IntroProps>,
-): Function {
+) {
   return connect(mapStateToProps)(BaseElement);
 }

@@ -28,7 +28,7 @@ import { ReactComponent as SketchLogo } from 'assets/images/sketch-logo.svg';
 import { ReactComponent as StorybookLogo } from 'assets/images/storybook-logo.svg';
 import { ReactComponent as TypescriptLogo } from 'assets/images/typescript-logo.svg';
 
-export const Logos = {
+export const Logos: any = {
   angular: (props: Logo): JSX.Element => <AngularLogo {...props} />,
   aws: (props: Logo): JSX.Element => <AwsLogo {...props} />,
   chrome: (props: Logo): JSX.Element => <ChromeLogo {...props} />,

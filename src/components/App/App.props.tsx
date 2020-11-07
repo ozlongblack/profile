@@ -1,3 +1,3 @@
 export interface AppProps {
-  i18n: string;
+  i18n?: string;
 }

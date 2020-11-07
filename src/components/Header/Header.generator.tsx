@@ -3,15 +3,15 @@ import { connect, MapStateToProps, MapDispatchToProps } from 'react-redux';
 import { darkMode } from 'actions';
 import { HeaderProps } from './Header.props';
 
-const mapStateToProps: MapStateToProps<{}, {}, HeaderProps> = (
+const mapStateToProps: MapStateToProps<any, any, HeaderProps> = (
   state: HeaderProps,
 ): {} => ({
   darkMode: state.darkMode,
   theme: state.theme,
 });
 
-const mapDispatchToProps: MapDispatchToProps<{}, {}> = (
-  dispatch: Function,
+const mapDispatchToProps: MapDispatchToProps<any, any> = (
+  dispatch: any,
 ): {} => ({
   setDarkMode: (state: boolean): void => {
     dispatch(darkMode.set(state));
@@ -20,7 +20,7 @@ const mapDispatchToProps: MapDispatchToProps<{}, {}> = (
 
 export default function generator(
   BaseComponent: FunctionComponent<HeaderProps>,
-): Function {
+) {
   return connect(
     mapStateToProps,
     mapDispatchToProps,

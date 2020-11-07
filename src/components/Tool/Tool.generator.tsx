@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react';
 import { connect, MapStateToProps } from 'react-redux';
 import { ToolProps } from './Tool.props';
 
-const mapStateToProps: MapStateToProps<{}, {}, ToolProps> = (
+const mapStateToProps: MapStateToProps<any, any, ToolProps> = (
   state: ToolProps,
 ): {} => ({
   profile: state.profile,
@@ -11,6 +11,6 @@ const mapStateToProps: MapStateToProps<{}, {}, ToolProps> = (
 
 export default function generator(
   BaseComponent: FunctionComponent<ToolProps>,
-): Function {
+) {
   return connect(mapStateToProps)(BaseComponent);
 }

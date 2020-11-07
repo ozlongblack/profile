@@ -17,7 +17,6 @@ import {
   PersistedState,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import immutableTransform from 'redux-persist-transform-immutable';
 import createSagaMiddleware, { SagaMiddleware } from 'redux-saga';
 import queryString from 'query-string';
 import { routesMap } from 'consts';
@@ -32,8 +31,8 @@ const routerConfig: Record<string, any> = {
   querySerializer: queryString,
 };
 
-const persistConfig: PersistConfig = {
-  transforms: [immutableTransform()],
+const persistConfig: PersistConfig<any> = {
+  transforms: [],
   key: 'root',
   storage,
   whitelist: ['darkMode', 'i18n', 'theme'],
@@ -55,22 +54,15 @@ const middlewareEnhancer: StoreEnhancer = applyMiddleware(
   router.middleware,
 );
 const composedEnhancers: StoreEnhancer = isProd
-  ? compose(
-      router.enhancer,
-      middlewareEnhancer,
-    )
+  ? compose(router.enhancer, middlewareEnhancer)
   : composeWithDevTools(router.enhancer, middlewareEnhancer);
 
 const store: Store = createStore(combinedReducer, composedEnhancers);
 
-const persistor: Persistor = persistStore(
-  store,
-  undefined,
-  (): void => {
-    i18n(store);
-    router.initialDispatch();
-  },
-);
+const persistor: Persistor = persistStore(store, undefined, (): void => {
+  i18n(store);
+  router.initialDispatch();
+});
 
 sagaMiddleware.run(rootSaga);
 

@@ -7,6 +7,7 @@ import storeConfig from 'store';
 import { App } from 'components';
 import * as serviceWorker from './serviceWorker';
 import './index.scss';
+import 'redux-persist-transform-immutable' 
 
 ReactGA.initialize('UA-139131237-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
