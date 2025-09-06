@@ -10,7 +10,7 @@
     height: 0;
 
     &:checked + .slider {
-      background-color: $green;
+      background-color: $black;
 
       &:before {
         transform: translateX(24px);

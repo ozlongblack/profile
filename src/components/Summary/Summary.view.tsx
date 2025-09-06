@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { map, nth } from 'lodash/fp';
 import { Pie } from 'components';
@@ -26,19 +26,17 @@ const calc = (x: number, y: number): number[] => [
 const renderFeatures = (
   features: Feature[],
   style: Record<string, string>,
-): JSX.Element[] =>
-  map(
-    (feature: Feature): JSX.Element => {
-      return (
-        <div className="stack__summary__item__desc">
-          <h3 style={{ color: style.fontLabelColor }}>{feature.title}</h3>
-          <p style={{ color: style.fontDescriptionColor }}>{feature.summary}</p>
-        </div>
-      );
-    },
-  )(features);
+): ReactNode[] =>
+  map((feature: Feature): ReactNode => {
+    return (
+      <div className="stack__summary__item__desc">
+        <h3 style={{ color: style.fontLabelColor }}>{feature.title}</h3>
+        <p style={{ color: style.fontDescriptionColor }}>{feature.summary}</p>
+      </div>
+    );
+  })(features);
 
-const Summary = (props: SummaryProps): JSX.Element => {
+const Summary = (props: SummaryProps): ReactNode => {
   const profile = props.profile.data;
   const features = profile.get('features');
 

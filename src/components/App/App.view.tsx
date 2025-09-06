@@ -1,7 +1,6 @@
-import React, { FunctionComponent, Suspense } from 'react';
+import React, { FunctionComponent, lazy, ReactNode, Suspense } from 'react';
 import { IntlProvider } from 'react-intl';
-import { Loading, Router } from 'components';
-import Components from 'routes';
+import { Loading } from 'components';
 import messagesEn from 'translations/en.json';
 import messagesKo from 'translations/ko.json';
 import { Intl } from 'types/Intl';
@@ -12,10 +11,12 @@ const messages: Intl = {
   ko: messagesKo,
 };
 
-const App: FunctionComponent<AppProps> = (props: AppProps): JSX.Element => (
+const Home = lazy((): Promise<any> => import(`../../containers/Home/Home`));
+
+const App: FunctionComponent<AppProps> = (props: AppProps): ReactNode => (
   <IntlProvider locale={props.i18n!} messages={messages[props.i18n!]}>
     <Suspense fallback={<Loading isLoading={true} />}>
-      <Router components={Components} />
+      <Home />
     </Suspense>
   </IntlProvider>
 );

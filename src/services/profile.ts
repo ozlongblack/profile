@@ -18,7 +18,6 @@ export default {
             ],
             location: 'Sydney',
             links: {
-              codesandbox: 'https://codesandbox.io/u/ozlongblack/sandboxes',
               github: 'https://github.com/ozlongblack',
               linkedin: 'https://www.linkedin.com/in/kihwan-cho-88440470/',
             },
@@ -26,17 +25,17 @@ export default {
               {
                 title: 'Functional Programming',
                 summary:
-                  'JavaScript is my favorite language. I follow Functional Programming principles in order to improve Immutability and Readability.',
+                  'My favorite language is JavaScript, where I embrace Functional Programming principles to strengthen immutability and readability.',
               },
               {
                 title: 'UI/UX',
                 summary:
-                  'I love beautiful user interfaces. I believe that the Golden Ratio is the key factor for systematic and scientific designs.',
+                  'I am passionate about crafting beautiful user interfaces, guided by the Golden Ratio as a foundation for systematic and scientific design.',
               },
               {
                 title: 'Data Visualization',
                 summary:
-                  'Informaton is beautiful. Visualizing correlations in complex data enriches our applications.',
+                  'Visualizing correlations in complex data adds clarity and depth, enriching applications with meaningful insights.',
               },
             ],
             stack: [
@@ -45,6 +44,24 @@ export default {
                 label: 'Javascript',
                 type: 'Front-end',
                 link: 'https://en.wikipedia.org/wiki/JavaScript',
+              },
+              {
+                name: 'typescript',
+                label: 'Typescript',
+                type: 'Type Checker',
+                link: 'https://www.typescriptlang.org/',
+              },
+              {
+                name: 'angular',
+                label: 'Angular',
+                type: 'Front-end',
+                link: 'https://angular.io/',
+              },
+              {
+                name: 'rxjs',
+                label: 'RxJS',
+                type: 'Front-end',
+                link: 'http://reactivex.io/',
               },
               {
                 name: 'react',
@@ -65,40 +82,16 @@ export default {
                 link: 'https://d3js.org/',
               },
               {
-                name: 'angular',
-                label: 'Angular',
-                type: 'Front-end',
-                link: 'https://angular.io/',
-              },
-              {
-                name: 'rxjs',
-                label: 'RxJS',
-                type: 'Front-end',
-                link: 'http://reactivex.io/',
-              },
-              {
-                name: 'html',
-                label: 'HTML',
-                type: 'Front-end',
-                link: 'https://en.wikipedia.org/wiki/HTML',
-              },
-              {
-                name: 'lodash',
-                label: 'Lodash/FP',
-                type: 'Front-end',
-                link: 'https://lodash.com',
-              },
-              {
-                name: 'css',
-                label: 'CSS',
-                type: 'Front-end',
-                link: 'https://en.wikipedia.org/wiki/Cascading_Style_Sheets',
-              },
-              {
                 name: 'sass',
                 label: 'Sass',
                 type: 'Front-end',
                 link: 'https://sass-lang.com/',
+              },
+              {
+                name: 'figma',
+                label: 'Figma',
+                type: 'UI/UX',
+                link: 'https://www.figma.com/',
               },
               {
                 name: 'storybook',
@@ -107,10 +100,29 @@ export default {
                 link: 'https://storybook.js.org/',
               },
               {
-                name: 'nodejs',
-                label: 'Node.js',
-                type: 'Back-end',
-                link: 'https://nodejs.org',
+                name: 'jest',
+                label: 'Jest',
+                type: 'Test',
+                link: 'https://jestjs.io/',
+              },
+              {
+                name: 'html',
+                label: 'HTML',
+                type: 'Front-end',
+                link: 'https://en.wikipedia.org/wiki/HTML',
+              },
+
+              {
+                name: 'css',
+                label: 'CSS',
+                type: 'Front-end',
+                link: 'https://en.wikipedia.org/wiki/Cascading_Style_Sheets',
+              },
+              {
+                name: 'lodash',
+                label: 'Lodash/FP',
+                type: 'Front-end',
+                link: 'https://lodash.com',
               },
               {
                 name: 'aws',
@@ -123,30 +135,6 @@ export default {
                 label: 'Google Cloud',
                 type: 'CI/CD',
                 link: 'https://cloud.google.com',
-              },
-              {
-                name: 'flow',
-                label: 'Flow',
-                type: 'Type Checker',
-                link: 'https://flow.org/',
-              },
-              {
-                name: 'typescript',
-                label: 'Typescript',
-                type: 'Type Checker',
-                link: 'https://www.typescriptlang.org/',
-              },
-              {
-                name: 'jest',
-                label: 'Jest',
-                type: 'Test',
-                link: 'https://jestjs.io/',
-              },
-              {
-                name: 'sketch',
-                label: 'Sketch',
-                type: 'UI/UX',
-                link: 'https://www.sketch.com/',
               },
               {
                 name: 'photoshop',
@@ -169,9 +157,14 @@ export default {
                 location: 'Sydney, Australia',
                 role: 'Senior Front-end Developer',
                 summary: [
-                  'Develop and manage Appliances Online. (https://www.appliancesonline.com.au/)',
-                  'Leading front-end development using the latest version of Angular/NGRX.',
-                  'Working closely with Back-end developers and design team.',
+                  'As the Lead Front-end Developer for Appliances Online (https://www.appliancesonline.com.au), I oversee all aspects of web application feature development. My responsibilities include:',
+                  'Feature Development: Managing the end-to-end development of various e-commerce features and UIs.',
+                  'Performance Optimization: Actively engaged in performance tuning initiatives, including:',
+                  '- Maintaining the application with the latest Angular versions and features.',
+                  '- Migrating to Angular standalone components and a zoneless app architecture.',
+                  '- Implementing state management using Angular Signals and NGRX Signal Store.',
+                  '- Improving styling efficiency with CSS custom properties (CSS variables).',
+                  '- Enhancing component reusability across multiple web applications using NX monorepo.',
                 ],
               },
               {
@@ -182,11 +175,10 @@ export default {
                 location: 'Sydney, Australia',
                 role: 'Front-end Developer',
                 summary: [
-                  'Developed and provided web applications using React/Redux and Angular 6/RXJS to multiple clients.',
-                  'Led front-end development to build a Business Intelligence application.',
-                  'Successfully productized a web application for Woolworths.',
-                  'Led data visualization implementation using d3.js.',
-                  'Followed Functional Programming and Test-Driven Development pattern.',
+                  'Successfully delivered client-facing web applications using frameworks like React/Redux and Angular 6/RxJS.',
+                  'Led the front-end development of a new Business Intelligence application, including the implementation of advanced data visualization using D3.js.',
+                  'Managed the successful productization and launch of a web application for Woolworths.',
+                  'Advocated for and applied Functional Programming and Test-Driven Development principles to improve code quality and maintainability.',
                 ],
               },
               {
@@ -197,10 +189,10 @@ export default {
                 location: 'Pangyo, Korea',
                 role: 'Front-end Developer',
                 summary: [
-                  'Developed and managed multiple web applications to provide internal/external Open APIs to over 2,000 internal employees and over 5,000 customers.',
-                  'Contributed to customer satisfaction with technical support.',
-                  'Led front-end development using React and Angularjs in Platform architecture team.',
-                  'Designed User Interface and implemented Responsive Web Design.',
+                  'Developed and managed multiple web applications to deliver Open APIs to a large user base of over 7,000 internal employees and external customers.',
+                  'Led front-end development for the Platform Architecture team, utilizing React and AngularJS.',
+                  'Designed and implemented user interfaces with a focus on Responsive Web Design for a seamless user experience.',
+                  'Provided technical support to enhance customer satisfaction.',
                 ],
               },
               {
@@ -211,10 +203,10 @@ export default {
                 location: 'Seoul, Korea',
                 role: 'Software Engineer',
                 summary: [
-                  'Successfully developed and provided web-based integrated systems using Javascript and IBM solutions across multiple major companies in Korea (LG Electronics, Korean Air Lines, Kyobo Life Insurance).',
-                  'Analyzed a variety of data and utilized Natural Language Processing to find valuable insights using IBM Watson Explorer.',
-                  'My team made a best practice providing an integrated NLP solution to Korean Air Lines. (https://www.ibm.com/case-studies/koreanairlines)',
-                  'Implemented multiple web-based dashboard applications using Javascript, dojo, jQuery and IBM Cognos BI solution.',
+                  'Engineered and delivered web-based integrated systems for major Korean companies, including LG Electronics, Korean Air Lines, and Kyobo Life Insurance.',
+                  'Leveraged IBM Watson Explorer to analyze diverse datasets and extract valuable insights using Natural Language Processing (NLP).',
+                  'Contributed to a best-practice integrated NLP solution for Korean Air Lines, which was featured as an IBM case study.',
+                  'Designed and implemented multiple web-based dashboard applications using JavaScript, dojo, jQuery, and IBM Cognos BI.',
                 ],
               },
             ],

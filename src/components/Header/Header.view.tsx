@@ -1,12 +1,12 @@
-import React, { useState, FunctionComponent } from 'react';
+import React, { useState, FunctionComponent, ReactNode } from 'react';
 import { SideNavigation } from 'components';
-import logo from 'assets/images/h2lab.svg';
 
 import { HeaderProps } from './Header.props';
+import { Logos } from 'consts';
 
 const Header: FunctionComponent<HeaderProps> = (
   props: HeaderProps,
-): JSX.Element => {
+): ReactNode => {
   const [show, setShow]: [boolean, Function] = useState(false);
   const theme = props.theme.data;
   const headerStyle = theme.get('header');
@@ -14,7 +14,10 @@ const Header: FunctionComponent<HeaderProps> = (
   return (
     <nav className={`header header--${props.sticky ? 'fixed' : 'top'}`}>
       <a className="header__logo" href="#top">
-        <img className="header__logo__img" src={logo} alt="" />
+        <Logos.k
+          className="header__logo__img"
+          style={{ fill: headerStyle.logoColor }}
+        />
       </a>
       <div className="header__menu">
         <label className="switch">

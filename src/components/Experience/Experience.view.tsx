@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { TimeLine } from 'components';
 import { ExperienceProps } from './Experience.props';
 
-const Experience = (props: ExperienceProps): JSX.Element => {
+const Experience = (props: ExperienceProps): ReactNode => {
   const profile = props.profile.data;
   const experience = profile.get('experience');
 

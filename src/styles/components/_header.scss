@@ -37,19 +37,19 @@
   &--fixed {
     height: #{$navigation-height-sm}px;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.15);
 
     + .generalPageLayout__content {
       padding-top: #{$navigation-height-md}px;
     }
 
     .header__logo {
-      height: 36px;
+      height: 28px;
     }
   }
 
   &__logo {
-    height: 48px;
+    height: 24px;
     transition: height #{$animationDuration}ms ease-in-out;
 
     &:focus {
@@ -91,13 +91,13 @@
 
   &__btn {
     $ButtonConfig: (
-      hoverColor: $green,
+      hoverColor: $charcoal,
     );
 
     @include button-icon($ButtonConfig);
 
     &:focus {
-      outline: $outline;
+      outline: transparent;
     }
   }
 }

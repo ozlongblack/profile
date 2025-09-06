@@ -1,7 +1,7 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, ReactNode } from 'react';
 import { GeneralPageLayout, Intro, Stack, Experience } from 'components';
 
-const Home: FunctionComponent = (): JSX.Element => {
+const Home: FunctionComponent = (): ReactNode => {
   return (
     <GeneralPageLayout>
       <Intro />

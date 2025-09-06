@@ -5,7 +5,9 @@ export default {
     const themes: any = {
       default: {
         header: {
+          logoColor: '#333',
           fontColor: '#6c7a89',
+          scrollColor: '#333',
         },
         footer: {
           backgroundColor: 'transparent',
@@ -26,7 +28,9 @@ export default {
       },
       dark: {
         header: {
+          logoColor: '#f5f5f5',
           fontColor: '#ddd',
+          scrollColor: '#f5f5f5',
         },
         footer: {
           backgroundColor: '#424242',

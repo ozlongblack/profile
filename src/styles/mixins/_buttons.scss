@@ -14,12 +14,12 @@
   cursor: pointer;
 
   &:focus {
-    border: 1px solid getValue(hoverColor, $ButtonConfig);
+    border: 1px solid map-get($ButtonConfig, 'hoverColor');
     border-radius: 2px;
-    color: getValue(hoverColor, $ButtonConfig);
+    color: map-get($ButtonConfig, 'hoverColor');
   }
 
   &:hover {
-    color: getValue(hoverColor, $ButtonConfig);
+    color: map-get($ButtonConfig, 'hoverColor');
   }
 }

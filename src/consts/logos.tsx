@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { Logo } from 'types/Logo';
+import { ReactComponent as KLogo } from 'assets/images/k.svg';
 import { ReactComponent as AngularLogo } from 'assets/images/angular-logo.svg';
 import { ReactComponent as AwsLogo } from 'assets/images/aws-logo.svg';
 import { ReactComponent as ChromeLogo } from 'assets/images/chrome-logo.svg';
@@ -7,7 +8,6 @@ import { ReactComponent as CodesandboxLogo } from 'assets/images/codesandbox-log
 import { ReactComponent as CssLogo } from 'assets/images/css-logo.svg';
 import { ReactComponent as D3Logo } from 'assets/images/d3-logo.svg';
 import { ReactComponent as FireFoxLogo } from 'assets/images/firefox-logo.svg';
-import { ReactComponent as FlowLogo } from 'assets/images/flow-logo.svg';
 import { ReactComponent as GithubLogo } from 'assets/images/github-logo.svg';
 import { ReactComponent as GoogleCloudLogo } from 'assets/images/google-cloud-logo.svg';
 import { ReactComponent as HtmlLogo } from 'assets/images/html-logo.svg';
@@ -24,36 +24,36 @@ import { ReactComponent as ReduxLogo } from 'assets/images/redux-logo.svg';
 import { ReactComponent as RxjsLogo } from 'assets/images/rxjs-logo.svg';
 import { ReactComponent as SafariLogo } from 'assets/images/safari-logo.svg';
 import { ReactComponent as SassLogo } from 'assets/images/sass-logo.svg';
-import { ReactComponent as SketchLogo } from 'assets/images/sketch-logo.svg';
+import { ReactComponent as FigmaLogo } from 'assets/images/figma-logo.svg';
 import { ReactComponent as StorybookLogo } from 'assets/images/storybook-logo.svg';
 import { ReactComponent as TypescriptLogo } from 'assets/images/typescript-logo.svg';
 
 export const Logos: any = {
-  angular: (props: Logo): JSX.Element => <AngularLogo {...props} />,
-  aws: (props: Logo): JSX.Element => <AwsLogo {...props} />,
-  chrome: (props: Logo): JSX.Element => <ChromeLogo {...props} />,
-  codesandbox: (props: Logo): JSX.Element => <CodesandboxLogo {...props} />,
-  css: (props: Logo): JSX.Element => <CssLogo {...props} />,
-  d3: (props: Logo): JSX.Element => <D3Logo {...props} />,
-  firefox: (props: Logo): JSX.Element => <FireFoxLogo {...props} />,
-  flow: (props: Logo): JSX.Element => <FlowLogo {...props} />,
-  github: (props: Logo): JSX.Element => <GithubLogo {...props} />,
-  googleCloud: (props: Logo): JSX.Element => <GoogleCloudLogo {...props} />,
-  html: (props: Logo): JSX.Element => <HtmlLogo {...props} />,
-  illustrator: (props: Logo): JSX.Element => <IllustratorLogo {...props} />,
-  javascript: (props: Logo): JSX.Element => <JavascriptLogo {...props} />,
-  jest: (props: Logo): JSX.Element => <JestLogo {...props} />,
-  linkedin: (props: Logo): JSX.Element => <LinkedIn {...props} />,
-  lodash: (props: Logo): JSX.Element => <LodashLogo {...props} />,
-  nodejs: (props: Logo): JSX.Element => <NodejsLogo {...props} />,
-  photoshop: (props: Logo): JSX.Element => <PhotoshopLogo {...props} />,
-  postgres: (props: Logo): JSX.Element => <PostgresLogo {...props} />,
-  react: (props: Logo): JSX.Element => <ReactLogo {...props} />,
-  redux: (props: Logo): JSX.Element => <ReduxLogo {...props} />,
-  rxjs: (props: Logo): JSX.Element => <RxjsLogo {...props} />,
-  safari: (props: Logo): JSX.Element => <SafariLogo {...props} />,
-  sass: (props: Logo): JSX.Element => <SassLogo {...props} />,
-  sketch: (props: Logo): JSX.Element => <SketchLogo {...props} />,
-  storybook: (props: Logo): JSX.Element => <StorybookLogo {...props} />,
-  typescript: (props: Logo): JSX.Element => <TypescriptLogo {...props} />,
+  k: (props: Logo): ReactNode => <KLogo {...props} />,
+  angular: (props: Logo): ReactNode => <AngularLogo {...props} />,
+  aws: (props: Logo): ReactNode => <AwsLogo {...props} />,
+  chrome: (props: Logo): ReactNode => <ChromeLogo {...props} />,
+  codesandbox: (props: Logo): ReactNode => <CodesandboxLogo {...props} />,
+  css: (props: Logo): ReactNode => <CssLogo {...props} />,
+  d3: (props: Logo): ReactNode => <D3Logo {...props} />,
+  firefox: (props: Logo): ReactNode => <FireFoxLogo {...props} />,
+  github: (props: Logo): ReactNode => <GithubLogo {...props} />,
+  googleCloud: (props: Logo): ReactNode => <GoogleCloudLogo {...props} />,
+  html: (props: Logo): ReactNode => <HtmlLogo {...props} />,
+  illustrator: (props: Logo): ReactNode => <IllustratorLogo {...props} />,
+  javascript: (props: Logo): ReactNode => <JavascriptLogo {...props} />,
+  jest: (props: Logo): ReactNode => <JestLogo {...props} />,
+  linkedin: (props: Logo): ReactNode => <LinkedIn {...props} />,
+  lodash: (props: Logo): ReactNode => <LodashLogo {...props} />,
+  nodejs: (props: Logo): ReactNode => <NodejsLogo {...props} />,
+  photoshop: (props: Logo): ReactNode => <PhotoshopLogo {...props} />,
+  postgres: (props: Logo): ReactNode => <PostgresLogo {...props} />,
+  react: (props: Logo): ReactNode => <ReactLogo {...props} />,
+  redux: (props: Logo): ReactNode => <ReduxLogo {...props} />,
+  rxjs: (props: Logo): ReactNode => <RxjsLogo {...props} />,
+  safari: (props: Logo): ReactNode => <SafariLogo {...props} />,
+  sass: (props: Logo): ReactNode => <SassLogo {...props} />,
+  figma: (props: Logo): ReactNode => <FigmaLogo {...props} />,
+  storybook: (props: Logo): ReactNode => <StorybookLogo {...props} />,
+  typescript: (props: Logo): ReactNode => <TypescriptLogo {...props} />,
 };

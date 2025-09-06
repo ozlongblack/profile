@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { ReactNode, useEffect, useRef, useState } from 'react';
 import { animated, useSpring } from 'react-spring';
 import * as d3 from 'd3';
 import { ANIMATIONS } from 'consts';
@@ -49,15 +49,15 @@ const Arc = ({
             `translate(${createArc.centroid(interpolator(t))})`,
         )}
       >
-        {animatedProps.t.interpolate(
-          (t: number): number => format(interpolator(t).value),
+        {animatedProps.t.interpolate((t: number): number =>
+          format(interpolator(t).value),
         )}
       </animated.text>
     </g>
   );
 };
 
-const Pie = (props: PieProps): JSX.Element => {
+const Pie = (props: PieProps): ReactNode => {
   const [data, setData] = useState(generateData(0));
   const cache = useRef<any | null>([]);
   const createPie = d3
@@ -89,31 +89,27 @@ const Pie = (props: PieProps): JSX.Element => {
     };
   }, []);
 
-  useEffect(
-    (): void => {
-      if (cache.current) {
-        cache.current = pieData;
-      }
-    },
-  );
+  useEffect((): void => {
+    if (cache.current) {
+      cache.current = pieData;
+    }
+  });
 
   return (
     <svg className="pie">
       <g transform={`translate(${props.outerRadius} ${props.outerRadius})`}>
-        {pieData.map(
-          (d: Record<string, any>, i: number): any => (
-            <Arc
-              key={i}
-              index={i}
-              from={previousData[i]}
-              to={d}
-              createArc={createArc}
-              colors={colors}
-              format={format}
-              animatedProps={animatedProps}
-            />
-          ),
-        )}
+        {pieData.map((d: Record<string, any>, i: number): any => (
+          <Arc
+            key={i}
+            index={i}
+            from={previousData[i]}
+            to={d}
+            createArc={createArc}
+            colors={colors}
+            format={format}
+            animatedProps={animatedProps}
+          />
+        ))}
       </g>
     </svg>
   );

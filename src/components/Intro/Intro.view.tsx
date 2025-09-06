@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { ReactNode, useRef } from 'react';
 import { useSpring } from 'react-spring';
 import { Fibonacci, Keyword } from 'components';
 import { Logos } from 'consts';
@@ -10,7 +10,7 @@ const calc = (x: number, y: number): number[] => [
   y - window.innerHeight / 2,
 ];
 
-const Intro = (props: IntroProps): JSX.Element => {
+const Intro = (props: IntroProps): ReactNode => {
   const profile = props.profile.data;
   const theme = props.theme.data;
   const generalStyle = theme.get('general');
@@ -65,17 +65,6 @@ const Intro = (props: IntroProps): JSX.Element => {
             rel="noopener noreferrer"
           >
             <Logos.github
-              className="intro__logo"
-              fill={generalStyle.fontLabelColor}
-            />
-          </a>
-          <a
-            className="intro__link"
-            href={profile.has('links') ? profile.get('links').codesandbox : ''}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Logos.codesandbox
               className="intro__logo"
               fill={generalStyle.fontLabelColor}
             />

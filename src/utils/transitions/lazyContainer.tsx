@@ -1,8 +1,6 @@
-import { lazy, FunctionComponent, LazyExoticComponent } from 'react';
+import { lazy } from 'react';
 
-const lazyContainer: Function = (
-  page: string,
-): LazyExoticComponent<FunctionComponent> =>
+const lazyContainer: Function = (page: string) =>
   lazy((): Promise<any> => import(`../../containers/${page}`));
 
 export default lazyContainer;

@@ -1,24 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import ReactGA from 'react-ga';
+import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/es/integration/react';
 import storeConfig from 'store';
 import { App } from 'components';
 import * as serviceWorker from './serviceWorker';
 import './index.scss';
-import 'redux-persist-transform-immutable' 
+import 'redux-persist-transform-immutable';
 
-ReactGA.initialize('UA-139131237-1');
-ReactGA.pageview(window.location.pathname + window.location.search);
+const root = createRoot(document.getElementById('root')!);
 
-ReactDOM.render(
+root.render(
   <Provider store={storeConfig.store}>
     <PersistGate persistor={storeConfig.persistor}>
       <App />
     </PersistGate>
   </Provider>,
-  document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change

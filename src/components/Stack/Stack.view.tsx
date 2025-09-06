@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { Summary, Tool } from 'components';
 
-const Stack = (): JSX.Element => {
+const Stack = (): ReactNode => {
   return (
     <div className="stack">
       <Summary />

@@ -1,5 +1,5 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, ReactNode } from 'react';
 
-const Profile: FunctionComponent = (): JSX.Element => <div>Profile</div>;
+const Profile: FunctionComponent = (): ReactNode => <div>Profile</div>;
 
 export default Profile;

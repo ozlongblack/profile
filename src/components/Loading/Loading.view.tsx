@@ -1,9 +1,9 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, ReactNode } from 'react';
 import { LoadingProps } from './Loading.props';
 
 const Loading: FunctionComponent<LoadingProps> = (
   props: LoadingProps,
-): JSX.Element => {
+): ReactNode => {
   return (
     <div
       className={`loading loading--${props.isLoading ? 'active' : 'inactive'}`}

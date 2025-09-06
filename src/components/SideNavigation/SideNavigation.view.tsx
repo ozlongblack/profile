@@ -1,9 +1,9 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, ReactNode } from 'react';
 import { SideNavigationProps } from './SideNavigation.props';
 
 const SideNavigation: FunctionComponent<SideNavigationProps> = (
   props: SideNavigationProps,
-): JSX.Element => {
+): ReactNode => {
   return (
     <section
       className={`sideNavigation sideNavigation--${

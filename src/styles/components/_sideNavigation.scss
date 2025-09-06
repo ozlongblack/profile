@@ -3,7 +3,7 @@
   top: 0;
   right: 0;
   height: 100%;
-  background-color: $green;
+  background-color: $black;
   box-sizing: border-box;
   transition: width #{$transitionDuration}ms ease-in-out,
     transform #{$transitionDuration}ms ease-in-out;
@@ -18,7 +18,7 @@
   }
 
   @include mediaLarge() {
-    width: 240px;
+    width: 280px;
   }
 
   &--closed {

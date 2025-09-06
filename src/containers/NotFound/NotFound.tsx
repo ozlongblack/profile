@@ -1,5 +1,5 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, ReactNode } from 'react';
 
-const NotFound: FunctionComponent = (): JSX.Element => <div>Not Found</div>;
+const NotFound: FunctionComponent = (): ReactNode => <div>Not Found</div>;
 
 export default NotFound;

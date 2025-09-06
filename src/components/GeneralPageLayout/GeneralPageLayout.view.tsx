@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, ReactNode } from 'react';
 import { Footer, Header, ScrollTracker } from 'components';
 import { useScrollStatus } from 'utils';
 import { Scroll } from 'types/Scroll';
@@ -6,7 +6,7 @@ import { GeneralPageLayoutProps } from './GeneralPageLayout.props';
 
 const GeneralPageLayout: FunctionComponent<GeneralPageLayoutProps> = (
   props: GeneralPageLayoutProps,
-): JSX.Element => {
+): ReactNode => {
   const scrollState: Scroll = useScrollStatus();
   const theme = props.theme.data;
   const generalStyle = theme.get('general');

@@ -1,11 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { ReactNode, useEffect, useRef, useState } from 'react';
 import { debounce } from 'lodash/fp';
 import { FibonacciProps } from './Fibonacci.props';
 
 const debouncedHandleResize = (fn: () => void): (() => void) =>
   debounce(500)(fn);
 
-const Fibonacci = (props: FibonacciProps): JSX.Element => {
+const Fibonacci = (props: FibonacciProps): ReactNode => {
   const theme = props.theme.data;
   const chartStyle = theme.get('chart');
   const ref = useRef<HTMLDivElement | null>(null);
@@ -21,7 +21,7 @@ const Fibonacci = (props: FibonacciProps): JSX.Element => {
     update({ width, height });
   };
 
-  useEffect(function(): any {
+  useEffect(function (): any {
     if (ref.current) {
       resize(ref.current, setSize);
     }

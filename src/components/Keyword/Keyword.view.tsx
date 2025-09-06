@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { ReactNode, useEffect, useRef, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { ANIMATIONS } from 'consts';
 import { generateRandomString } from 'utils';
@@ -11,7 +11,7 @@ const trans2 = (x: number, y: number): string =>
 const trans3 = (x: number, y: number): string =>
   `translate3d(${x / 500}px,${y / 150}px,0)`;
 
-const Keyword = (props: KeywordProps): JSX.Element => {
+const Keyword = (props: KeywordProps): ReactNode => {
   const [keyword, setKeyword] = useState((): string => '');
   const [loading, setLoading] = useState((): number => 0);
   const counter = useRef(0);

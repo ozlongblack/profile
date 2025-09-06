@@ -1,10 +1,9 @@
-import React, { FunctionComponent } from 'react';
-import { Logos } from 'consts';
+import React, { FunctionComponent, ReactNode } from 'react';
 import { FooterProps } from './Footer.props';
 
 const Footer: FunctionComponent<FooterProps> = (
   props: FooterProps,
-): JSX.Element => {
+): ReactNode => {
   const theme = props.theme.data;
   const footerStyle = theme.get('footer');
 
@@ -18,13 +17,8 @@ const Footer: FunctionComponent<FooterProps> = (
           color: footerStyle.fontColor,
         }}
       >
-        Copyright &#9400; 2019 Kihwan. All rights reserved.
+        Copyright &#9400; 2025 Kihwan. All rights reserved.
       </span>
-      <div className="footer__browsers">
-        <Logos.chrome className="footer__browsers__svg" />
-        <Logos.firefox className="footer__browsers__svg" />
-        <Logos.safari className="footer__browsers__svg" />
-      </div>
     </footer>
   );
 };

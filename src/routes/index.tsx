@@ -1,14 +1,15 @@
-import React, { ReactElement } from 'react';
+import React, { ComponentType, LazyExoticComponent, ReactElement } from 'react';
 import { PATHS } from 'consts';
 import { lazyContainer } from 'utils';
 
 const Components: { [key: string]: Function } = {
   [PATHS.ROOT]: (): ReactElement => {
-    const Home: Function = lazyContainer('Home/Home');
+    const Home: LazyExoticComponent<ComponentType> = lazyContainer('Home/Home');
     return <Home />;
   },
   [PATHS.NOT_FOUND]: (): ReactElement => {
-    const NotFound: Function = lazyContainer('NotFound/NotFound');
+    const NotFound: LazyExoticComponent<ComponentType> =
+      lazyContainer('NotFound/NotFound');
     return <NotFound />;
   },
 };
