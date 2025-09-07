@@ -40,9 +40,17 @@
   }
 
   &__message {
-    max-width: 50%;
     line-height: 1.6;
     font-family: 'Raleway', sans-serif;
+    z-index: 2;
+
+    @include mediaMedium() {
+      max-width: 75%;
+    }
+
+    @include mediaLarge() {
+      max-width: 50%;
+    }
   }
 
   &__links {
