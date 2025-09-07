@@ -20,21 +20,29 @@
 
   &__text {
     position: relative;
-    font-family: AvenirNext-DemiBold;
+    line-height: 1.6;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
     user-select: none;
     z-index: 2;
 
     @include mediaSmall() {
-      font-size: $global-font-label-sm;
+      font-size: $global-font-h1-sm;
     }
 
     @include mediaMedium() {
-      font-size: $global-font-label-md;
+      font-size: $global-font-h1-md;
     }
 
     @include mediaLarge() {
-      font-size: $global-font-label-lg;
+      font-size: $global-font-h1-lg;
     }
+  }
+
+  &__message {
+    max-width: 50%;
+    line-height: 1.6;
+    font-family: 'Raleway', sans-serif;
   }
 
   &__links {

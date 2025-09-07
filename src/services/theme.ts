@@ -17,8 +17,8 @@ export default {
           backgroundColor: 'transparent',
           placeholderColor: '#f5f5f5',
           fontTitleColor: '#333',
-          fontLabelColor: '#6c7a89',
-          fontDescriptionColor: '#999',
+          fontLabelColor: '#333',
+          fontDescriptionColor: '#555',
           borderColor: '#eee',
         },
         chart: {

@@ -88,22 +88,10 @@ export default {
                 link: 'https://sass-lang.com/',
               },
               {
-                name: 'figma',
-                label: 'Figma',
-                type: 'UI/UX',
-                link: 'https://www.figma.com/',
-              },
-              {
                 name: 'storybook',
                 label: 'Storybook',
                 type: 'Front-end',
                 link: 'https://storybook.js.org/',
-              },
-              {
-                name: 'jest',
-                label: 'Jest',
-                type: 'Test',
-                link: 'https://jestjs.io/',
               },
               {
                 name: 'html',
@@ -125,6 +113,19 @@ export default {
                 link: 'https://lodash.com',
               },
               {
+                name: 'figma',
+                label: 'Figma',
+                type: 'UI/UX',
+                link: 'https://www.figma.com/',
+              },
+              {
+                name: 'jest',
+                label: 'Jest',
+                type: 'Test',
+                link: 'https://jestjs.io/',
+              },
+
+              {
                 name: 'aws',
                 label: 'AWS',
                 type: 'CI/CD',
@@ -135,18 +136,6 @@ export default {
                 label: 'Google Cloud',
                 type: 'CI/CD',
                 link: 'https://cloud.google.com',
-              },
-              {
-                name: 'photoshop',
-                label: 'Photoshop',
-                type: 'UI/UX',
-                link: 'https://www.adobe.com',
-              },
-              {
-                name: 'illustrator',
-                label: 'Illustrator',
-                type: 'UI/UX',
-                link: 'https://www.adobe.com',
               },
             ],
             experience: [

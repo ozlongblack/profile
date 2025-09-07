@@ -7,7 +7,7 @@
   &__header {
     margin-top: 80px;
     color: $black;
-    font-family: AvenirNext-DemiBold;
+    font-family: 'Raleway', sans-serif;
 
     @include mediaSmall() {
       @include grid-column(12, $mobile-grid);
@@ -75,7 +75,7 @@
     }
 
     &__label {
-      font-family: AvenirNext-DemiBold;
+      font-family: 'Raleway', sans-serif;
       transition: color #{$transitionDuration}ms ease-in-out;
 
       @include mediaSmall() {
@@ -91,7 +91,7 @@
 
     &__type {
       margin-top: 4px;
-      font-family: AvenirNext-Medium;
+      font-family: 'Raleway', sans-serif;
       line-height: 1.1;
       transition: color #{$transitionDuration}ms ease-in-out;
 

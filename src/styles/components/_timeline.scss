@@ -104,7 +104,7 @@
             top: 0;
             bottom: 0;
           }
-          font-family: AvenirNext-DemiBold;
+          font-family: 'Raleway', sans-serif;
           font-size: $global-font-label-sm;
           transition: color #{$transitionDuration}ms ease-in-out;
         }
@@ -114,7 +114,7 @@
             top: 0;
             bottom: 0;
           }
-          font-family: AvenirNext-medium;
+          font-family: 'Raleway', sans-serif;
           font-size: $global-font-content-lg;
           transition: color #{$transitionDuration}ms ease-in-out;
         }
@@ -141,7 +141,7 @@
             top: 0;
             bottom: 0;
           }
-          font-family: AvenirNext-medium;
+          font-family: 'Raleway', sans-serif;
           font-size: $global-font-content-md;
           transition: color #{$transitionDuration}ms ease-in-out;
         }
@@ -171,7 +171,7 @@
           top: 0;
           bottom: 0;
         }
-        font-family: AvenirNext-medium;
+        font-family: 'Raleway', sans-serif;
         font-size: $global-font-content-lg;
         line-height: 1.6;
         transition: color #{$transitionDuration}ms ease-in-out;

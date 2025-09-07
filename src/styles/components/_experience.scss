@@ -6,7 +6,7 @@
   &__header {
     margin-top: 80px;
     color: $black;
-    font-family: AvenirNext-DemiBold;
+    font-family: 'Raleway', sans-serif;
     transition: color #{$transitionDuration}ms ease-in-out;
 
     @include mediaSmall() {

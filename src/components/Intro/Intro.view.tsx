@@ -37,15 +37,22 @@ const Intro = (props: IntroProps): ReactNode => {
         style={{ color: generalStyle.fontLabelColor }}
       >
         <Fibonacci />
-        <span className="intro__text">Hello, I am {profile.get('name')},</span>
+        <span className="intro__text">{profile.get('role')}.</span>
         <span className="intro__text">
-          {profile.get('role')} based in {profile.get('location')},
+          Crafting Intuitive Web Experiences with
         </span>
-        <span className="intro__text">who loves</span>
         <Keyword
           keywords={profile.get('keywords')}
           animatedProps={animatedProps}
         />
+
+        <span className="intro__message">
+          Hi, I’m a {profile.get('role')} focused on building high-performance,
+          scalable web applications. I specialize in creating clean,
+          maintainable code and intuitive user interfaces that deliver real
+          value.
+        </span>
+        <br />
         <div className="intro__links">
           <a
             className="intro__link"
