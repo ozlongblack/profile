@@ -11,7 +11,7 @@ export default {
         },
         footer: {
           backgroundColor: 'transparent',
-          fontColor: '#6c7a89',
+          fontColor: '#555',
         },
         general: {
           backgroundColor: 'transparent',

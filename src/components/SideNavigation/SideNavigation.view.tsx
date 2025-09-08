@@ -17,6 +17,7 @@ const SideNavigation: FunctionComponent<SideNavigationProps> = (
             props.close();
           }}
           tabIndex={props.show ? 0 : -1}
+          aria-label="Close Menu"
         >
           <i className="icon ion-md-close" />
         </button>

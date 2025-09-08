@@ -59,6 +59,7 @@ const Intro = (props: IntroProps): ReactNode => {
             href={profile.has('links') ? profile.get('links').linkedin : ''}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
             <Logos.linkedin
               className="intro__logo"
@@ -70,6 +71,7 @@ const Intro = (props: IntroProps): ReactNode => {
             href={profile.has('links') ? profile.get('links').github : ''}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub"
           >
             <Logos.github
               className="intro__logo"

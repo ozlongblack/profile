@@ -13,7 +13,7 @@ const Header: FunctionComponent<HeaderProps> = (
 
   return (
     <nav className={`header header--${props.sticky ? 'fixed' : 'top'}`}>
-      <a className="header__logo" href="#top">
+      <a className="header__logo" href="#top" aria-label="Home">
         <Logos.k
           className="header__logo__img"
           style={{ fill: headerStyle.logoColor }}
@@ -27,6 +27,7 @@ const Header: FunctionComponent<HeaderProps> = (
             onChange={(event): void => {
               props.setDarkMode(event.target.checked);
             }}
+            aria-label="Toggle Dark Mode"
           />
           <span className="slider slider--round" />
         </label>
@@ -36,6 +37,7 @@ const Header: FunctionComponent<HeaderProps> = (
             setShow(true);
           }}
           style={{ color: headerStyle.fontColor }}
+          aria-label="Menu"
         >
           <i className="icon ion-md-menu" />
         </button>
