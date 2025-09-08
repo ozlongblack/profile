@@ -1,12 +1,12 @@
 import React, { ReactNode } from 'react';
 import { map } from 'lodash/fp';
-import moment from 'moment';
+import { format, parse } from 'date-fns';
 import { Timeline } from 'types/Timeline';
 import { TimelineProps } from './TimeLine.props';
-import ibm from 'assets/images/ibm.png';
-import skplanet from 'assets/images/skplanet.png';
-import stationfive from 'assets/images/stationfive.png';
-import winning from 'assets/images/winning.png';
+import ibm from 'assets/images/ibm.webp';
+import skplanet from 'assets/images/skplanet.webp';
+import stationfive from 'assets/images/stationfive.webp';
+import winning from 'assets/images/winning.webp';
 
 const IMAGES: any = {
   ibm,
@@ -53,9 +53,12 @@ const renderTimeline = (
             </div>
             <div className="timeline__item__title__post">
               <p style={{ color: style.fontDescriptionColor }}>
-                {`${moment(item.startDate, 'YYYYMMDD').format('MMM YYYY')} - ${
+                {`${format(parse(item.startDate, 'yyyyMMdd', new Date()), 'MMM yyyy')} - ${
                   item.endDate
-                    ? moment(item.endDate, 'YYYYMMDD').format('MMM YYYY')
+                    ? format(
+                        parse(item.endDate, 'yyyyMMdd', new Date()),
+                        'MMM yyyy',
+                      )
                     : 'Current'
                 }`}
               </p>
